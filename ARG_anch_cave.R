@@ -5,11 +5,11 @@ MAGs_PA_per_depth_ggplot2 <- ggplot(MAGs_PA_per_depth_f, aes(x=Tax2, y=value, fi
   theme_bw()+
   theme(axis.text.x = element_text(angle = 45, hjust=1))
 
-#Heatmap Drug class-replace circos plot - new package-----
+
+
+
 heatmap_drug_class6_matrix <- as.matrix(heatmap_drug_class6)
-
 Heatmap(heatmap_drug_class6_matrix, cluster_columns = FALSE, cluster_rows = FALSE)
-
 col_fun3 = colorRamp2(c(0,1,2,3,4,5,6),  c( "#e6e6e6","#fe97fe","#fd59fd","#fc2ffc", "#ca26ca", "#971c97", "#4c0e4c"))
 
 circos.par("start.degree" = 90, gap.after = c(2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
